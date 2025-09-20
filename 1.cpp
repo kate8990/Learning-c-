@@ -4,18 +4,18 @@ using namespace std;
 
 int main()
 {
-	//Арифметичні оператори : +, -, *, / , %
-	//Оператори присвоювання : =, +=, -=, *=, /= тощо
-	//Оператори порівняння : == , != , > , <, >= , <=
-	//Логічні оператори : &&, || , !
-	//Оператори побітових операцій : &, | , ^, ~, << , >>
-	//Оператори інкремент / декремент : ++, --
+	//Arithmetic operators: +, -, *, / , %
+	//Assignment operators: =, +=, -=, *=, /= etc.
+	//Comparison operators: == , != , > , <, >= , <=
+	//Logical operators: &&, || , !
+	//Bitwise operators: &, | , ^, ~, << , >>
+	//Increment/decrement operators: ++, --
 
 	int a = 10;
 	int b = 3;
 	int c = 0;
 
-	//Арифметичні оператори
+	//Arithmetic operators
 	c = a + b; // c = 13
 	cout << "c = a + b = " << c << endl;
 	c = a - b; // c = 7
@@ -27,7 +27,7 @@ int main()
 	c = a % b; // c = 1
 	cout << "c = a % b = " << c << endl;
 	c += a; // c = c + a = 1 + 10 = 11
-	//Оператори присвоювання
+	//Assignment operators
 	cout << "c += a -> c = " << c << endl;
 	c -= a; // c = c - a = 11 - 10 = 1
 	cout << "c -= a -> c = " << c << endl;
@@ -37,8 +37,8 @@ int main()
 	cout << "c /= a -> c = " << c << endl;
 	c %= a; // c = c % a = 1 % 10 = 1
 	cout << "c %= a -> c = " << c << endl;
-	//Оператори порівняння
-	bool result; // true або false
+	//Comparison operators
+	bool result; // true or false
 	result = (a == b); // false
 	cout << "a == b -> " << result << endl;
 	result = (a != b); // true
@@ -51,7 +51,7 @@ int main()
 	cout << "a >= b -> " << result << endl;
 	result = (a <= b); // false
 	cout << "a <= b -> " << result << endl;
-	//Логічні оператори
+	//Logical operators
 	bool x = true;
 	bool y = false;
 	result = x && y; // false
@@ -62,7 +62,7 @@ int main()
 	cout << "!x -> " << result << endl;
 	result = !y; // true
 	cout << "!y -> " << result << endl;
-	//Оператори інкремент / декремент
+	//Increment/decrement operators
 	int i = 5;
 	cout << "i = " << i << endl; // 5
 	cout << "i++ = " << i++ << endl; // 5
