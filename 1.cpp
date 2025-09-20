@@ -1,20 +1,78 @@
-// 1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	//Арифметичні оператори : +, -, *, / , %
+	//Оператори присвоювання : =, +=, -=, *=, /= тощо
+	//Оператори порівняння : == , != , > , <, >= , <=
+	//Логічні оператори : &&, || , !
+	//Оператори побітових операцій : &, | , ^, ~, << , >>
+	//Оператори інкремент / декремент : ++, --
+
+	int a = 10;
+	int b = 3;
+	int c = 0;
+
+	//Арифметичні оператори
+	c = a + b; // c = 13
+	cout << "c = a + b = " << c << endl;
+	c = a - b; // c = 7
+	cout << "c = a - b = " << c << endl;
+	c = a * b; // c = 30
+	cout << "c = a * b = " << c << endl;
+	c = a / b; // c = 3
+	cout << "c = a / b = " << c << endl;
+	c = a % b; // c = 1
+	cout << "c = a % b = " << c << endl;
+	c += a; // c = c + a = 1 + 10 = 11
+	//Оператори присвоювання
+	cout << "c += a -> c = " << c << endl;
+	c -= a; // c = c - a = 11 - 10 = 1
+	cout << "c -= a -> c = " << c << endl;
+	c *= a; // c = c * a = 1 * 10 = 10
+	cout << "c *= a -> c = " << c << endl;
+	c /= a; // c = c / a = 10 / 10 = 1
+	cout << "c /= a -> c = " << c << endl;
+	c %= a; // c = c % a = 1 % 10 = 1
+	cout << "c %= a -> c = " << c << endl;
+	//Оператори порівняння
+	bool result; // true або false
+	result = (a == b); // false
+	cout << "a == b -> " << result << endl;
+	result = (a != b); // true
+	cout << "a != b -> " << result << endl;
+	result = (a > b); // true
+	cout << "a > b -> " << result << endl;
+	result = (a < b); // false
+	cout << "a < b -> " << result << endl;
+	result = (a >= b); // true
+	cout << "a >= b -> " << result << endl;
+	result = (a <= b); // false
+	cout << "a <= b -> " << result << endl;
+	//Логічні оператори
+	bool x = true;
+	bool y = false;
+	result = x && y; // false
+	cout << "x && y -> " << result << endl;
+	result = x || y; // true
+	cout << "x || y -> " << result << endl;
+	result = !x; // false
+	cout << "!x -> " << result << endl;
+	result = !y; // true
+	cout << "!y -> " << result << endl;
+	//Оператори інкремент / декремент
+	int i = 5;
+	cout << "i = " << i << endl; // 5
+	cout << "i++ = " << i++ << endl; // 5
+	cout << "i = " << i << endl; // 6
+	cout << "++i = " << ++i << endl; // 7
+	cout << "i = " << i << endl; // 7
+	cout << "i-- = " << i-- << endl; // 7
+	cout << "i = " << i << endl; // 6
+	cout << "--i = " << --i << endl; // 5
+	cout << "i = " << i << endl; // 5
+	return 0;
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
